@@ -1,0 +1,47 @@
+name: flutter_portfolio
+description: "Portfolio"
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.1
+  flutter_svg: ^2.0.17
+  scrollable_positioned_list: ^0.3.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/
+    - lib/assets/svg/
+    - lib/assets/projects_pics/
+
+  fonts:
+    - family: MulishBold
+      fonts:
+        - asset: lib/assets/fonts/Mulish-Bold.ttf
+    - family: MulishExtraBold
+      fonts:
+        - asset: lib/assets/fonts/Mulish-ExtraBold.ttf
+    - family: MulishMedium
+      fonts:
+        - asset: lib/assets/fonts/Mulish-Medium.ttf
+    - family: MulishSemiBold
+      fonts:
+        - asset: lib/assets/fonts/Mulish-SemiBold.ttf
+    - family: MPLUS1Code
+      fonts:
+        - asset: lib/assets/fonts/MPLUS1Code-Medium.ttf
