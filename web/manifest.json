@@ -1,11 +1,11 @@
 {
-    "name": "flutter_portfolio",
-    "short_name": "flutter_portfolio",
+    "name": "LuisMa portfolio",
+    "short_name": "lmgf",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Just a dev porfolio.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
