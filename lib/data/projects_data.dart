@@ -100,7 +100,6 @@ const projectsData = [
     colorShadowPic: Color(0xFFB06780),
     textColor: Color(0xFFF8E7ED),
     cardText: 'Swift Notes',
-    logo: PSVGIcons.lodgify,
     title: 'Offline Notes App',
     description:
         'Native Multi-Modular iOS (Swift/SwiftUI) app made to test/explore the SQLite3 C APIs.',

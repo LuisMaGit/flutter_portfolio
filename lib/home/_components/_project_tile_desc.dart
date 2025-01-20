@@ -9,7 +9,7 @@ class _ProjectTileDesc extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = PTheme.of(context).colors;
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       spacing: kSpace4,
       children: [
         // logo + icon
@@ -20,13 +20,15 @@ class _ProjectTileDesc extends StatelessWidget {
             child: Row(
               children: [
                 if (project.logo != null)
-                  SizedBox.square(
-                    dimension: 30,
-                    child: PSvgAsset(
-                      asset: project.logo!,
+                  Padding(
+                    padding: const EdgeInsets.only(right: kSpace2),
+                    child: SizedBox.square(
+                      dimension: 30,
+                      child: PSvgAsset(
+                        asset: project.logo!,
+                      ),
                     ),
                   ),
-                SizedBox(width: kSpace2),
                 Expanded(
                   child: PText.h1(
                     text: project.title,
