@@ -30,6 +30,31 @@ const projectsData = [
     ],
   ),
   ProjectModel(
+    backgroundColor: Color(0xFFE2B714),
+    colorShadowPic: Color(0xFF7F6600),
+    textColor: Color(0xFFFFF7D8),
+    cardText: 'Pac\ntype',
+    logo: PSVGIcons.pactype,
+    title: 'Pacman for typists',
+    description:
+        'A Kotlin Compose Multiplatfom game, with no game engine, offline, running in Android, iOS and macOS.',
+    picType: ProjectPicType.desktop,
+    srcLighPic: PProjectsPics.pactype,
+    srcDarkPic: PProjectsPics.pactype,
+    mainLink: 'https://github.com/LuisMaGit/pactype/blob/main/README.md',
+    buttons: [
+      ProjectButton(
+        type: ProjectButtonType.googlePlay,
+        link: 'https://play.google.com/store/apps/details?id=com.luisma.pactype',
+      ),
+      ProjectButton(
+        type: ProjectButtonType.macOSAppleChip,
+        link:
+            'https://github.com/LuisMaGit/pactype/raw/refs/heads/main/mac_arm/Pactype-1.0.0.dmg',
+      ),
+    ],
+  ),
+  ProjectModel(
     backgroundColor: Color(0xFFFF9957),
     colorShadowPic: Color(0xFFBA703F),
     textColor: Color(0xFFFFE7D6),

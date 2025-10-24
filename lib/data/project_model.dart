@@ -14,6 +14,7 @@ class ProjectModel {
     required this.colorShadowPic,
     required this.buttons,
     required this.mainLink,
+    this.picType = ProjectPicType.mobile,
     this.logo,
   });
 
@@ -27,6 +28,7 @@ class ProjectModel {
   final String srcDarkPic;
   final Color colorShadowPic;
   final String mainLink;
+  final ProjectPicType picType;
   final List<ProjectButton> buttons;
 }
 
@@ -42,6 +44,10 @@ enum ProjectButtonType {
   appStore(
     name: 'Apple Store',
     iconAsset: PSVGIcons.appStore,
+  ),
+  macOSAppleChip(
+    name: 'macOS .dmg',
+    iconAsset: PSVGIcons.apple,
   );
 
   final String name;
@@ -58,4 +64,9 @@ class ProjectButton {
 
   final ProjectButtonType type;
   final String link;
+}
+
+enum ProjectPicType {
+  mobile,
+  desktop,
 }
